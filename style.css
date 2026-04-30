@@ -859,13 +859,23 @@ html {
   50% { opacity: 1; }
   100% { opacity: 0.4; }
 }
-/* 📱 Mobile view fix */
+/* 🔥 FORCE MOBILE FIX */
 @media (max-width: 768px) {
+
   .gallery-grid {
-    grid-template-columns: 1fr;   /* 1 image per row */
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  .gallery-item {
+    width: 100% !important;
   }
 
   .gallery-img {
-    height: 250px;  /* better height for mobile */
+    width: 100% !important;
+    height: 250px !important;
+    object-fit: cover !important;
   }
+
 }
