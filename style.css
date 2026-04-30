@@ -879,3 +879,18 @@ html {
   }
 
 }
+/* 🔥 FINAL MOBILE FIX */
+.gallery-grid {
+  grid-template-rows: none !important;
+}
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .gallery-img {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
