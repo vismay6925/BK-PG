@@ -859,3 +859,13 @@ html {
   50% { opacity: 1; }
   100% { opacity: 0.4; }
 }
+/* 📱 Mobile view fix */
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;   /* 1 image per row */
+  }
+
+  .gallery-img {
+    height: 250px;  /* better height for mobile */
+  }
+}
